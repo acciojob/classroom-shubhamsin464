@@ -10,8 +10,8 @@ import java.util.List;
 public class StudentService {
     @Autowired
     StudentRepository studentRepository;
-    public void addStudent(Student student){studentRepository.addStudentToDb(student);}
-    public void addTeacher(Teacher teacher){studentRepository.addTeacherToDb(teacher);}
+    public void addStudent(Student student){studentRepository.addStudent(student);}
+    public void addTeacher(Teacher teacher){studentRepository.addTeacher(teacher);}
     public void addStudentTeacherPair(String teacher,String student){studentRepository.addStudentTeacherPair(teacher,student);}
     public Student getStudentByName(String name){ return studentRepository.getStudentByName(name);}
     public Teacher getTeacherByName(String name){return studentRepository.getTeacherByName(name);}
