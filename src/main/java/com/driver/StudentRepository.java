@@ -1,12 +1,14 @@
 package com.driver;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 @Repository
+
 public class StudentRepository {
     HashMap<String,Student> studentDb = new HashMap<>();
     HashMap<String,Teacher> teacherDb = new HashMap<>();
